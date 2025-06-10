@@ -449,6 +449,9 @@ java -jar build/libs/logo-server-0.0.1-SNAPSHOT.jar
 - **Swagger UI**: http://localhost:8080/swagger-ui.html
 - **헬스체크**: http://localhost:8080/health
 
+### 실행 후 DB 데이터 삽입
+- 실행 후 생성된 loggodb 데이터베이스의 areas 테이블에 `/resources/assets/areas-insert-sql-lowercase.sql` 데이터를 추가
+
 ### API 테스트
 ```bash
 # 헬스체크 API 테스트

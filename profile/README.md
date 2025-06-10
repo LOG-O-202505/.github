@@ -354,7 +354,6 @@ LOG:O 프로젝트에 관심을 가져주신 모든 분들께 진심으로 감�
 
 ---
 
-*Made with ❤️ by SSAFY 12기 자율프로젝트팀*
 
 **LOG:O** © 2025. All rights reserved.
 

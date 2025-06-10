@@ -424,9 +424,9 @@ cd LOG-O-vue && npm install && npm run serve
 
 ### 🏗️ **한승수 (부팀장)** - *Backend & Infrastructure*
 - **Spring Boot**: RESTful API 설계 및 구현
-- **MySQL**: 데이터베이스 스키마 설계 및 최적화
-- **Docker**: 컨테이너 기반 인프라 구축
-- **서버 운영**: 배포 자동화 및 모니터링
+- **Security**: Spring Security 보안 설계 및 JWT Token 구현
+- **Docker&DB**: 컨테이너 기반 DB(MySQL, Redis, MinIO) 인프라 구축
+- **AI**: SpringAI활용 OpenAI(ChatGPT, Claude) 연동
 - **성능 최적화**: 데이터베이스 쿼리 및 시스템 튜닝
 
 ### 📞 **연락처**

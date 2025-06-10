@@ -263,6 +263,9 @@ ollama list
 
 ## ⚙️ 3단계: Spring Boot 백엔드 설정 (LOG-O-SpringAI)
 
+### SpringAI 프로젝트 Repo (상세한 설명은 해당 레포 README 확인)
+[SpringAI Repository](https://github.com/LOG-O-202505/LOG-O-vue)
+
 ### Java 21 설치
 
 #### Windows 환경
@@ -312,7 +315,7 @@ sudo apt install mysql-server-8.0
 sudo systemctl start mysql
 sudo systemctl enable mysql
 
-# Windows: MySQL 공식 사이트에서 설치 파일 다운로드
+# Windows: MySQL 공식 사이트에서 설치 파일 다운로드 혹은 Docker에 mysql container 실행
 ```
 
 #### 데이터베이스 및 사용자 생성
@@ -373,14 +376,14 @@ docker-compose ps
 #### MinIO 접속 및 버킷 생성
 1. **MinIO 콘솔 접속**: http://localhost:9001
 2. **로그인**: 
-   - 사용자명: `banchan`
-   - 비밀번호: `banchandev`
-3. **버킷 생성**: `logo-bucket` 이름으로 새 버킷 생성
+   - 사용자명: `root`
+   - 비밀번호: `root`
+3. **버킷 생성**: `travel-storage` 이름으로 새 버킷 생성
 4. **권한 설정**: Public 읽기 권한 설정
 
-### 환경 변수 설정
+### 환경 변수 설정 예시
 
-`LOG-O-SpringAI` 루트 디렉토리에 `.env` 파일 생성:
+`LOG-O-SpringAI` 루트 디렉토리에 `.env` 파일 생성 혹은 `Intellij` 환경 변수 등록
 
 ```env
 # 데이터베이스 설정
@@ -389,13 +392,13 @@ DB_USER=root
 DB_PASSWORD=your_mysql_password
 
 # JWT 보안 설정
-JWT_SECRET=your-very-long-and-secure-jwt-secret-key-at-least-256-bits-long
+JWT_SECRET=your-very-long-and-secure-jwt-secret-key-at-least-512-bits-long
 
 # AI API 키
 OPENAI_API_KEY=your_openai_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
-GPT_MODEL=gpt-4
-CLAUDE_MODEL=claude-3-sonnet-20240229
+GPT_MODEL=gpt-4o
+CLAUDE_MODEL=claude-3.7-sonnet-20240229
 
 # OAuth2 설정
 GOOGLE_CLIENT_ID=your_google_client_id
